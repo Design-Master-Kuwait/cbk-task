@@ -1,0 +1,6 @@
+framework module Pods_CbkTask_CbkTaskUITests {
+  umbrella header "Pods-CbkTask-CbkTaskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
