@@ -30,7 +30,7 @@ class Connectivity {
             // Internet is NOT connected.
             Logger.log("Not reachable")
             self.currentConnected = false
-//            AlertMesage.showInternetNotConnected(message: "No interbet connection")
+            AlertMesage.showInternetNotConnected(message: "No interbet connection")
         }
 
         reachability.whenReachable = { _ in

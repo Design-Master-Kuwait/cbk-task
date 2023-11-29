@@ -27,7 +27,6 @@ class GoogleManager: NSObject {
         let serverClientID = UserManager.obfuscator.reveal(key: AppKey.ServerClientID)
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().serverClientID = serverClientID
-//        GIDSignIn.sharedInstance().scopes =  GoogleScope.arrScope
         GIDSignIn.sharedInstance().delegate = self
         
     }
@@ -73,18 +72,11 @@ extension GoogleManager: GIDSignInDelegate {
         // Perform any operations on signed in user here.
         complitionHandler?(.success(SocialUser(user: user)))
         
-//        guard let authentication = user.authentication else { return }
-        
-//        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-//                                                       accessToken: authentication.accessToken)
-        // ...
-        
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
         // ...
-        
         complitionHandler?(.failure(error))
         
     }
