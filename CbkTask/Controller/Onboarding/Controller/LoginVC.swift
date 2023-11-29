@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
+import FirebaseStorage
 
 class LoginVC: BaseViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -16,9 +16,10 @@ target 'CbkTask' do
 #
 #  # Add the pods for any other Firebase products you want to use in your app
 #  # For example, to use Firebase Authentication and Cloud Firestore
-#  pod 'FirebaseFirestore'
-  
-  
+  pod 'FirebaseFirestore', '9.6.0'
+  pod 'Firebase/Storage','9.6.0'
+
+
   target 'CbkTaskTests' do
     inherit! :search_paths
     # Pods for testing

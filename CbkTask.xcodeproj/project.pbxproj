@@ -10,7 +10,6 @@
 		1A82315FD32EFBA9743495AB /* Pods_CbkTask_CbkTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB11227B3B5762C8D3B7F48 /* Pods_CbkTask_CbkTaskUITests.framework */; };
 		6EE2A79A08DC915364B9B9BA /* Pods_CbkTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569DDB8BEB6089BBE8446F8B /* Pods_CbkTask.framework */; };
 		71B69F397538CB9B0A395253 /* Pods_CbkTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EC16693F75F64C2A2B431 /* Pods_CbkTaskTests.framework */; };
-		9CA3BE052B17070100218293 /* AlertMesage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3BE042B17070100218293 /* AlertMesage.swift */; };
 		9CA3BE0E2B17095300218293 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 9CA3BE0D2B17095300218293 /* SwiftMessages */; };
 		9CA3BE122B170B8E00218293 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3BE112B170B8E00218293 /* Localizable.swift */; };
 		9CA3BE142B170CF500218293 /* ColorAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA3BE132B170CF500218293 /* ColorAsset.xcassets */; };
@@ -46,6 +45,7 @@
 		9CC1DA482B1658B200B1B2CA /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1DA442B1658B200B1B2CA /* String+Localization.swift */; };
 		9CC1DA4D2B16599C00B1B2CA /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1DA4C2B16599C00B1B2CA /* AppKey.swift */; };
 		C19DC4712B16697B00FCBE6F /* AppDelegate + GoogleSignin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19DC4702B16697B00FCBE6F /* AppDelegate + GoogleSignin.swift */; };
+		C19DC4752B17127500FCBE6F /* AlertMesage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19DC4742B17127500FCBE6F /* AlertMesage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +73,6 @@
 		5EB11227B3B5762C8D3B7F48 /* Pods_CbkTask_CbkTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CbkTask_CbkTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A8A7F6894851F20A4613AD /* Pods-CbkTask-CbkTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CbkTask-CbkTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-CbkTask-CbkTaskUITests/Pods-CbkTask-CbkTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		890F666C84FB57F65D6D655D /* Pods-CbkTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CbkTask.debug.xcconfig"; path = "Target Support Files/Pods-CbkTask/Pods-CbkTask.debug.xcconfig"; sourceTree = "<group>"; };
-		9CA3BE042B17070100218293 /* AlertMesage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMesage.swift; sourceTree = "<group>"; };
 		9CA3BE112B170B8E00218293 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		9CA3BE132B170CF500218293 /* ColorAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAsset.xcassets; sourceTree = "<group>"; };
 		9CA3BE162B170D5C00218293 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
@@ -110,6 +109,7 @@
 		9CC1DA4C2B16599C00B1B2CA /* AppKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppKey.swift; sourceTree = "<group>"; };
 		A75DD6BF4904B7279196797A /* Pods-CbkTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CbkTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-CbkTaskTests/Pods-CbkTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C19DC4702B16697B00FCBE6F /* AppDelegate + GoogleSignin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate + GoogleSignin.swift"; sourceTree = "<group>"; };
+		C19DC4742B17127500FCBE6F /* AlertMesage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMesage.swift; sourceTree = "<group>"; };
 		CC7EC16693F75F64C2A2B431 /* Pods_CbkTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CbkTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,7 +161,7 @@
 		9CA3BE032B17070100218293 /* AlertMesage */ = {
 			isa = PBXGroup;
 			children = (
-				9CA3BE042B17070100218293 /* AlertMesage.swift */,
+				C19DC4742B17127500FCBE6F /* AlertMesage.swift */,
 			);
 			name = AlertMesage;
 			path = "../../../../Trendal-ios/Trendal/Utilities/CustomCode/AlertMesage";
@@ -735,6 +735,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C19DC4752B17127500FCBE6F /* AlertMesage.swift in Sources */,
 				9CA3BE122B170B8E00218293 /* Localizable.swift in Sources */,
 				9CC1DA1D2B16251800B1B2CA /* GoogleLogin+Manager.swift in Sources */,
 				9CC1DA022B16129000B1B2CA /* BaseViewController.swift in Sources */,
@@ -755,7 +756,6 @@
 				9CC1DA1F2B16251800B1B2CA /* UDManager.swift in Sources */,
 				9CC1DA1E2B16251800B1B2CA /* SocialUser.swift in Sources */,
 				9CC1DA362B1632FD00B1B2CA /* Obfuscator.swift in Sources */,
-				9CA3BE052B17070100218293 /* AlertMesage.swift in Sources */,
 				C19DC4712B16697B00FCBE6F /* AppDelegate + GoogleSignin.swift in Sources */,
 				9CC1DA482B1658B200B1B2CA /* String+Localization.swift in Sources */,
 			);
