@@ -46,7 +46,7 @@ public final class User: NSObject, NSCoding, NSSecureCoding {
     public var openTime: String?
     public var type: Int?
     public var closeTime: String?
-    public var id: Int?
+    public var id: String?
     public var image: String?
     public var phone: Int?
     public var iban: String?
@@ -81,7 +81,7 @@ public final class User: NSObject, NSCoding, NSSecureCoding {
         openTime = json[SerializationKeys.openTime].string
         type = json[SerializationKeys.type].int
         closeTime = json[SerializationKeys.closeTime].string
-        id = json[SerializationKeys.id].int
+        id = json[SerializationKeys.id].string
         image = json[SerializationKeys.image].string
         phone = json[SerializationKeys.phone].int
         iban = json[SerializationKeys.iban].string
@@ -135,7 +135,7 @@ public final class User: NSObject, NSCoding, NSSecureCoding {
         self.openTime = aDecoder.decodeObject(forKey: SerializationKeys.openTime) as? String
         self.type = aDecoder.decodeObject(forKey: SerializationKeys.type) as? Int
         self.closeTime = aDecoder.decodeObject(forKey: SerializationKeys.closeTime) as? String
-        self.id = aDecoder.decodeObject(forKey: SerializationKeys.id) as? Int
+        self.id = aDecoder.decodeObject(forKey: SerializationKeys.id) as? String
         self.image = aDecoder.decodeObject(forKey: SerializationKeys.image) as? String
         self.phone = aDecoder.decodeObject(forKey: SerializationKeys.phone) as? Int
         self.iban = aDecoder.decodeObject(forKey: SerializationKeys.iban) as? String

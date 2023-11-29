@@ -42,3 +42,4 @@ let MAIN_BUNDLE                                 =   Bundle.main
 
 /// get the first root viewcontroller
 var ROOT_FIRST_VC                               = UIApplication.shared.windows.first
+

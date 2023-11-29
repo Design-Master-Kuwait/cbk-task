@@ -10,12 +10,13 @@ target 'CbkTask' do
   pod 'Firebase/Auth', '9.6.0'
   pod 'GoogleSignIn', '5.0.2'
   
+  #pod for ProgressBar
+  #https://github.com/SVProgressHUD/SVProgressHUD
+  pod 'SVProgressHUD', '2.2.5'
   
-#  # Add the Firebase pod for Google Analytics
-#  pod 'FirebaseAnalytics'
-#
-#  # Add the pods for any other Firebase products you want to use in your app
-#  # For example, to use Firebase Authentication and Cloud Firestore
+
+  #  # Add the pods for any other Firebase products you want to use in your app
+  #  # For example, to use Firebase Authentication and Cloud Firestore
   pod 'FirebaseFirestore', '9.6.0'
   pod 'Firebase/Storage','9.6.0'
 

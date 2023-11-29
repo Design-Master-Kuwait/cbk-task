@@ -21,7 +21,6 @@
 		9CA3BE2F2B17201500218293 /* AuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3BE2E2B17201500218293 /* AuthVM.swift */; };
 		9CA3BE322B17233700218293 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3BE312B17233700218293 /* Utility.swift */; };
 		9CC1D9C42B160FA700B1B2CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1D9C32B160FA700B1B2CA /* AppDelegate.swift */; };
-		9CC1D9C62B160FA700B1B2CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1D9C52B160FA700B1B2CA /* SceneDelegate.swift */; };
 		9CC1D9CD2B160FA900B1B2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC1D9CC2B160FA900B1B2CA /* Assets.xcassets */; };
 		9CC1D9D02B160FA900B1B2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC1D9CE2B160FA900B1B2CA /* LaunchScreen.storyboard */; };
 		9CC1D9DB2B160FA900B1B2CA /* CbkTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1D9DA2B160FA900B1B2CA /* CbkTaskTests.swift */; };
@@ -52,6 +51,10 @@
 		9CC1DA4D2B16599C00B1B2CA /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1DA4C2B16599C00B1B2CA /* AppKey.swift */; };
 		C19DC4712B16697B00FCBE6F /* AppDelegate + GoogleSignin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19DC4702B16697B00FCBE6F /* AppDelegate + GoogleSignin.swift */; };
 		C19DC4752B17127500FCBE6F /* AlertMesage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19DC4742B17127500FCBE6F /* AlertMesage.swift */; };
+		C1DBAD272B17326F0045F18F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD262B17326F0045F18F /* ImagePicker.swift */; };
+		C1DBAD2C2B1744DC0045F18F /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD2B2B1744DC0045F18F /* HomeVM.swift */; };
+		C1DBAD2F2B1745470045F18F /* FirebaseFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD2E2B1745470045F18F /* FirebaseFileManager.swift */; };
+		C1DBAD322B17475C0045F18F /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD312B17475C0045F18F /* ProgressHUD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +93,6 @@
 		9CA3BE312B17233700218293 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		9CC1D9C02B160FA700B1B2CA /* CbkTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CbkTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC1D9C32B160FA700B1B2CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CC1D9C52B160FA700B1B2CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9CC1D9CC2B160FA900B1B2CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CC1D9CF2B160FA900B1B2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CC1D9D12B160FA900B1B2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,6 +124,10 @@
 		A75DD6BF4904B7279196797A /* Pods-CbkTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CbkTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-CbkTaskTests/Pods-CbkTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C19DC4702B16697B00FCBE6F /* AppDelegate + GoogleSignin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate + GoogleSignin.swift"; sourceTree = "<group>"; };
 		C19DC4742B17127500FCBE6F /* AlertMesage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMesage.swift; sourceTree = "<group>"; };
+		C1DBAD262B17326F0045F18F /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		C1DBAD2B2B1744DC0045F18F /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		C1DBAD2E2B1745470045F18F /* FirebaseFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFileManager.swift; sourceTree = "<group>"; };
+		C1DBAD312B17475C0045F18F /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
 		CC7EC16693F75F64C2A2B431 /* Pods_CbkTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CbkTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -190,19 +196,12 @@
 		9CA3BE1F2B171CC600218293 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C1DBAD2A2B1744CD0045F18F /* ViewModel */,
 				9CA3BE232B171CE800218293 /* Controller */,
 				9CA3BE222B171CE300218293 /* Model */,
 				9CA3BE212B171CDE00218293 /* View */,
-				9CA3BE202B171CD000218293 /* ViewModel */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		9CA3BE202B171CD000218293 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		9CA3BE212B171CDE00218293 /* View */ = {
@@ -316,7 +315,6 @@
 		9CC1D9F52B16105200B1B2CA /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				9CC1D9C52B160FA700B1B2CA /* SceneDelegate.swift */,
 				9CC1D9C32B160FA700B1B2CA /* AppDelegate.swift */,
 				C19DC4702B16697B00FCBE6F /* AppDelegate + GoogleSignin.swift */,
 			);
@@ -416,6 +414,9 @@
 		9CC1DA102B16248800B1B2CA /* CustomCode */ = {
 			isa = PBXGroup;
 			children = (
+				C1DBAD302B17475C0045F18F /* ProgressHUD */,
+				C1DBAD2D2B17452A0045F18F /* FirebaseFileManager */,
+				C1DBAD252B17325E0045F18F /* ImagePicker */,
 				9CA3BE152B170D5C00218293 /* Color */,
 				9CA3BE032B17070100218293 /* AlertMesage */,
 				9CC1DA342B1632FD00B1B2CA /* Secure */,
@@ -507,6 +508,38 @@
 				9CC1DA442B1658B200B1B2CA /* String+Localization.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		C1DBAD252B17325E0045F18F /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBAD262B17326F0045F18F /* ImagePicker.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		C1DBAD2A2B1744CD0045F18F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBAD2B2B1744DC0045F18F /* HomeVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1DBAD2D2B17452A0045F18F /* FirebaseFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBAD2E2B1745470045F18F /* FirebaseFileManager.swift */,
+			);
+			path = FirebaseFileManager;
+			sourceTree = "<group>";
+		};
+		C1DBAD302B17475C0045F18F /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBAD312B17475C0045F18F /* ProgressHUD.swift */,
+			);
+			path = ProgressHUD;
 			sourceTree = "<group>";
 		};
 		D0E0CD544B3CDB7BE3033B40 /* Frameworks */ = {
@@ -811,6 +844,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CA3BE322B17233700218293 /* Utility.swift in Sources */,
+				C1DBAD322B17475C0045F18F /* ProgressHUD.swift in Sources */,
 				C19DC4752B17127500FCBE6F /* AlertMesage.swift in Sources */,
 				9CA3BE122B170B8E00218293 /* Localizable.swift in Sources */,
 				9CC1DA1D2B16251800B1B2CA /* GoogleLogin+Manager.swift in Sources */,
@@ -827,15 +861,17 @@
 				9CC1DA332B16321500B1B2CA /* Enum.swift in Sources */,
 				9CC1DA382B16339900B1B2CA /* User.swift in Sources */,
 				9CC1DA302B1631BE00B1B2CA /* Logger.swift in Sources */,
-				9CC1D9C62B160FA700B1B2CA /* SceneDelegate.swift in Sources */,
+				C1DBAD272B17326F0045F18F /* ImagePicker.swift in Sources */,
 				9CA3BE172B170D5C00218293 /* UIColorExtensions.swift in Sources */,
 				9CA3BE2F2B17201500218293 /* AuthVM.swift in Sources */,
+				C1DBAD2F2B1745470045F18F /* FirebaseFileManager.swift in Sources */,
 				9CC1DA212B16251800B1B2CA /* Connectivity.swift in Sources */,
 				9CC1DA1F2B16251800B1B2CA /* UDManager.swift in Sources */,
 				9CA3BE2B2B171D8C00218293 /* StoryboardSceneBased.swift in Sources */,
 				9CC1DA1E2B16251800B1B2CA /* SocialUser.swift in Sources */,
 				9CC1DA362B1632FD00B1B2CA /* Obfuscator.swift in Sources */,
 				C19DC4712B16697B00FCBE6F /* AppDelegate + GoogleSignin.swift in Sources */,
+				C1DBAD2C2B1744DC0045F18F /* HomeVM.swift in Sources */,
 				9CC1DA482B1658B200B1B2CA /* String+Localization.swift in Sources */,
 				9CA3BE2D2B171DDD00218293 /* StoryboardName.swift in Sources */,
 			);
@@ -1017,6 +1053,8 @@
 				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/CbkTask/Resources/PropertyList/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Application Would Like To Acees Your Photo Library for upload  photo ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Application Would Like To Acees Your Photo Library for upload  photo ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
@@ -1051,6 +1089,8 @@
 				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/CbkTask/Resources/PropertyList/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Application Would Like To Acees Your Photo Library for upload  photo ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Application Would Like To Acees Your Photo Library for upload  photo ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;

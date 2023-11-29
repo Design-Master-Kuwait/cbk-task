@@ -13,10 +13,9 @@ public class Utility {
     // MARK: - singleton sharedInstance
     static var sharedInstance = Utility()
  
-    
     /// This method will set root root view controller
     static func setRootScreen(isShowAnimation: Bool = false) {
-        let controller = UDManager.isUserLogin ? HomeVC.instantiate() : LoginVC.instantiate()
+        let controller =  HomeVC.instantiate()
         let navigationController = BaseNavigationController(rootViewController: controller)
         if isShowAnimation {
             UIView.transition(with: ROOT_FIRST_VC!,
@@ -34,6 +33,9 @@ public class Utility {
         }
 
          
+    }
+    static var timestamp: String {
+        return "\(Int(Date().timeIntervalSince1970 * 1000))"
     }
     
 }

@@ -750,12 +750,14 @@ PODS:
   - nanopb/decode (2.30909.1)
   - nanopb/encode (2.30909.1)
   - PromisesObjC (2.3.1)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Firebase/Auth (= 9.6.0)
   - Firebase/Storage (= 9.6.0)
   - FirebaseFirestore (= 9.6.0)
   - GoogleSignIn (= 5.0.2)
+  - SVProgressHUD (= 2.2.5)
 
 SPEC REPOS:
   trunk:
@@ -784,6 +786,7 @@ SPEC REPOS:
     - Libuv-gRPC
     - nanopb
     - PromisesObjC
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   abseil: ebe5b5529fb05d93a8bdb7951607be08b7fa71bc
@@ -811,7 +814,8 @@ SPEC CHECKSUMS:
   Libuv-gRPC: 55e51798e14ef436ad9bc45d12d43b77b49df378
   nanopb: d4d75c12cd1316f4a64e3c6963f879ecd4b5e0d5
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 4fadfe9a80159ba4badc6f73d506cd9cb6690317
+PODFILE CHECKSUM: ceb06dc8cfd689a9a7e57acee5bf995910bd2330
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.13.0

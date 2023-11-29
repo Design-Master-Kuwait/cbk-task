@@ -16,14 +16,14 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>39</integer>
 		</dict>
 		<key>Playground (Playground) 11.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>40</integer>
 		</dict>
 		<key>Playground (Playground) 12.xcscheme</key>
 		<dict>
@@ -121,7 +121,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>38</integer>
 		</dict>
 		<key>Playground (Playground).xcscheme</key>
 		<dict>

@@ -16,9 +16,8 @@ class AuthVM {
     /// - Parameters:
     ///   - data: Any
     ///   - completion: Void
-    func handleSuccess(data: Any, completion: @escaping (() -> Void)) {
-        let aUser = User(object: data)
-        UserManager.shared.sync(user: aUser)
+    func handleSuccess(data: User, completion: @escaping (() -> Void)) {
+        UserManager.shared.sync(user: data)
         completion()
     }
     

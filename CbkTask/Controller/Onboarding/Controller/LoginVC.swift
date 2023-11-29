@@ -6,10 +6,6 @@
 //
 
 import UIKit
-import FirebaseCore
-import FirebaseFirestore
-import FirebaseAuth
-import FirebaseStorage
 
 class LoginVC: BaseViewController , StoryboardSceneBased {
     
@@ -24,7 +20,9 @@ class LoginVC: BaseViewController , StoryboardSceneBased {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
+    
    
     // MARK: IBActiond
     // action method on google login button click
@@ -44,7 +42,12 @@ class LoginVC: BaseViewController , StoryboardSceneBased {
                         print( "Auth Code==", response.authCode ?? "")
                         GoogleManager.shared.logout()
                         if response.authCode?.isBlank == false {
-                            authVM.handleSuccess(data: result) {
+                            var objUser: User?
+                            objUser = User(json: [:])
+                            objUser?.name = response.firstName
+                            objUser?.id = response.socialID
+                            authVM.handleSuccess(data: objUser!) {
+                                 
                                 Utility.setRootScreen(isShowAnimation: true)
                             }
                         }
