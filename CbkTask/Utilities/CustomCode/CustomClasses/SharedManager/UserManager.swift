@@ -1,4 +1,3 @@
-// https://www.swiftjectivec.com/nssecurecoding/
 
 import Foundation
 import UIKit

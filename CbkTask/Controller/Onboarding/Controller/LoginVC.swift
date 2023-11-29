@@ -11,35 +11,43 @@ import FirebaseFirestore
 import FirebaseAuth
 import FirebaseStorage
 
-class LoginVC: BaseViewController {
+class LoginVC: BaseViewController , StoryboardSceneBased {
+    
+    /// Storyboard variable
+    static let sceneStoryboard = UIStoryboard(name: StoryboardName.onboarding.rawValue, bundle: nil)
+
+    
+    // MARK: Variable
+    private lazy var authVM: AuthVM = {
+        return AuthVM()
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+   
     // MARK: IBActiond
     // action method on google login button click
     /// - Parameter sender: object of button
     @IBAction func btnLoginTaped(_ sender: Any) {
-        if !Connectivity.shared.isConnected {
-            AlertMesage.showInternetNotConnected(message: Localizable.Message.noNetwork)
-            return
-        }
-        authneticateWithGoogle()
+        Connectivity.shared.isConnected ? authenticateWithGoogle()  : AlertMesage.showInternetNotConnected(message: Localizable.Message.noNetwork)  // checked is netowork connected or not
     }
     
-    func authneticateWithGoogle() {
+    /// Authenticate using google login account
+    func  authenticateWithGoogle() {
         GoogleManager.shared.signIn(from: self) { [weak self] (result) in
                     guard let self = self else { return }
                     switch result {
                     case .success(let response):
                         // ✅ Successfully logged-in.
                         AlertMesage.show(.success, message: Localizable.Message.loginSucess)
-
                         print( "Auth Code==", response.authCode ?? "")
-                        if response.authCode?.isBlank == false {
-                            
-                        }
                         GoogleManager.shared.logout()
+                        if response.authCode?.isBlank == false {
+                            authVM.handleSuccess(data: result) {
+                                Utility.setRootScreen(isShowAnimation: true)
+                            }
+                        }
                         
                     case .failure(let error):
                         // 🚨 Display an error message to the user.

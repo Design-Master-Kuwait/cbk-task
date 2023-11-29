@@ -39,3 +39,6 @@ let USER_DEFAULTS                               =   UserDefaults.standard
 
 /// General object of Main Bundle
 let MAIN_BUNDLE                                 =   Bundle.main
+
+/// get the first root viewcontroller
+var ROOT_FIRST_VC                               = UIApplication.shared.windows.first

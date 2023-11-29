@@ -14,6 +14,12 @@
 		9CA3BE122B170B8E00218293 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3BE112B170B8E00218293 /* Localizable.swift */; };
 		9CA3BE142B170CF500218293 /* ColorAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA3BE132B170CF500218293 /* ColorAsset.xcassets */; };
 		9CA3BE172B170D5C00218293 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3BE162B170D5C00218293 /* UIColorExtensions.swift */; };
+		9CA3BE252B171CFE00218293 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA3BE242B171CFD00218293 /* Home.storyboard */; };
+		9CA3BE272B171D0B00218293 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3BE262B171D0B00218293 /* HomeVC.swift */; };
+		9CA3BE2B2B171D8C00218293 /* StoryboardSceneBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3BE2A2B171D8C00218293 /* StoryboardSceneBased.swift */; };
+		9CA3BE2D2B171DDD00218293 /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3BE2C2B171DDD00218293 /* StoryboardName.swift */; };
+		9CA3BE2F2B17201500218293 /* AuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3BE2E2B17201500218293 /* AuthVM.swift */; };
+		9CA3BE322B17233700218293 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3BE312B17233700218293 /* Utility.swift */; };
 		9CC1D9C42B160FA700B1B2CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1D9C32B160FA700B1B2CA /* AppDelegate.swift */; };
 		9CC1D9C62B160FA700B1B2CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1D9C52B160FA700B1B2CA /* SceneDelegate.swift */; };
 		9CC1D9CD2B160FA900B1B2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC1D9CC2B160FA900B1B2CA /* Assets.xcassets */; };
@@ -76,6 +82,12 @@
 		9CA3BE112B170B8E00218293 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		9CA3BE132B170CF500218293 /* ColorAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAsset.xcassets; sourceTree = "<group>"; };
 		9CA3BE162B170D5C00218293 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		9CA3BE242B171CFD00218293 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		9CA3BE262B171D0B00218293 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		9CA3BE2A2B171D8C00218293 /* StoryboardSceneBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSceneBased.swift; sourceTree = "<group>"; };
+		9CA3BE2C2B171DDD00218293 /* StoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
+		9CA3BE2E2B17201500218293 /* AuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVM.swift; sourceTree = "<group>"; };
+		9CA3BE312B17233700218293 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		9CC1D9C02B160FA700B1B2CA /* CbkTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CbkTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC1D9C32B160FA700B1B2CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CC1D9C52B160FA700B1B2CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +187,63 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
+		9CA3BE1F2B171CC600218293 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9CA3BE232B171CE800218293 /* Controller */,
+				9CA3BE222B171CE300218293 /* Model */,
+				9CA3BE212B171CDE00218293 /* View */,
+				9CA3BE202B171CD000218293 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9CA3BE202B171CD000218293 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9CA3BE212B171CDE00218293 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9CA3BE242B171CFD00218293 /* Home.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CA3BE222B171CE300218293 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CA3BE232B171CE800218293 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9CA3BE262B171D0B00218293 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9CA3BE292B171D8C00218293 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9CA3BE2A2B171D8C00218293 /* StoryboardSceneBased.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		9CA3BE302B17232E00218293 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9CA3BE312B17233700218293 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		9CC1D9B72B160FA700B1B2CA = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +298,7 @@
 		9CC1D9F32B16103C00B1B2CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9CA3BE1F2B171CC600218293 /* Home */,
 				9CC1DA002B16126A00B1B2CA /* BaseController */,
 				9CC1D9F92B16121400B1B2CA /* Onboarding */,
 			);
@@ -256,6 +326,7 @@
 		9CC1D9F62B16106400B1B2CA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				9CA3BE302B17232E00218293 /* Utility */,
 				9CC1DA3E2B1658A300B1B2CA /* Extention */,
 				9CC1DA312B16320400B1B2CA /* Constant */,
 				9CC1DA102B16248800B1B2CA /* CustomCode */,
@@ -319,6 +390,7 @@
 		9CC1D9FD2B16123B00B1B2CA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9CA3BE2E2B17201500218293 /* AuthVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -393,6 +465,7 @@
 			isa = PBXGroup;
 			children = (
 				9CC1DA322B16321500B1B2CA /* Enum.swift */,
+				9CA3BE2C2B171DDD00218293 /* StoryboardName.swift */,
 				9CC1DA3C2B16585500B1B2CA /* Constant.swift */,
 				9CA3BE112B170B8E00218293 /* Localizable.swift */,
 			);
@@ -411,6 +484,7 @@
 		9CC1DA3E2B1658A300B1B2CA /* Extention */ = {
 			isa = PBXGroup;
 			children = (
+				9CA3BE292B171D8C00218293 /* Storyboard */,
 				9CC1DA3F2B1658B200B1B2CA /* SwiftStdlib */,
 			);
 			path = Extention;
@@ -568,6 +642,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA3BE252B171CFE00218293 /* Home.storyboard in Resources */,
 				9CA3BE142B170CF500218293 /* ColorAsset.xcassets in Resources */,
 				9CC1D9D02B160FA900B1B2CA /* LaunchScreen.storyboard in Resources */,
 				9CC1DA0F2B1623B800B1B2CA /* GoogleService-Info.plist in Resources */,
@@ -735,6 +810,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA3BE322B17233700218293 /* Utility.swift in Sources */,
 				C19DC4752B17127500FCBE6F /* AlertMesage.swift in Sources */,
 				9CA3BE122B170B8E00218293 /* Localizable.swift in Sources */,
 				9CC1DA1D2B16251800B1B2CA /* GoogleLogin+Manager.swift in Sources */,
@@ -744,6 +820,7 @@
 				9CC1DA062B1612F800B1B2CA /* LoginVC.swift in Sources */,
 				9CC1D9C42B160FA700B1B2CA /* AppDelegate.swift in Sources */,
 				9CC1DA042B1612B600B1B2CA /* BaseNavigationController.swift in Sources */,
+				9CA3BE272B171D0B00218293 /* HomeVC.swift in Sources */,
 				9CC1DA462B1658B200B1B2CA /* StringExtension.swift in Sources */,
 				9CC1DA4D2B16599C00B1B2CA /* AppKey.swift in Sources */,
 				9CC1DA472B1658B200B1B2CA /* String+Validation.swift in Sources */,
@@ -752,12 +829,15 @@
 				9CC1DA302B1631BE00B1B2CA /* Logger.swift in Sources */,
 				9CC1D9C62B160FA700B1B2CA /* SceneDelegate.swift in Sources */,
 				9CA3BE172B170D5C00218293 /* UIColorExtensions.swift in Sources */,
+				9CA3BE2F2B17201500218293 /* AuthVM.swift in Sources */,
 				9CC1DA212B16251800B1B2CA /* Connectivity.swift in Sources */,
 				9CC1DA1F2B16251800B1B2CA /* UDManager.swift in Sources */,
+				9CA3BE2B2B171D8C00218293 /* StoryboardSceneBased.swift in Sources */,
 				9CC1DA1E2B16251800B1B2CA /* SocialUser.swift in Sources */,
 				9CC1DA362B1632FD00B1B2CA /* Obfuscator.swift in Sources */,
 				C19DC4712B16697B00FCBE6F /* AppDelegate + GoogleSignin.swift in Sources */,
 				9CC1DA482B1658B200B1B2CA /* String+Localization.swift in Sources */,
+				9CA3BE2D2B171DDD00218293 /* StoryboardName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
