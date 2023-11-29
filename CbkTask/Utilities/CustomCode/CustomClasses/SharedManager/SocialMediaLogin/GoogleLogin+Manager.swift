@@ -23,6 +23,7 @@ class GoogleManager: NSObject {
     private override init() {
         
         super.init()
+        
         let serverClientID = UserManager.obfuscator.reveal(key: AppKey.ServerClientID)
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().serverClientID = serverClientID
