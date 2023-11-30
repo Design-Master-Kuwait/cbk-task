@@ -20,10 +20,8 @@ class LoginVC: BaseViewController , StoryboardSceneBased {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
-   
     // MARK: IBActiond
     // action method on google login button click
     /// - Parameter sender: object of button
@@ -42,16 +40,12 @@ class LoginVC: BaseViewController , StoryboardSceneBased {
                         print( "Auth Code==", response.authCode ?? "")
                         GoogleManager.shared.logout()
                         if response.authCode?.isBlank == false {
-                            var objUser: User?
-                            objUser = User(json: [:])
-                            objUser?.name = response.firstName
-                            objUser?.id = response.socialID
-                            authVM.handleSuccess(data: objUser!) {
-                                 
+                            authVM.saveUserData(user: response)
+                            authVM.handleSuccess {
+                                FirebaseDatabaseManager.shared.insertUserData() // for storing user data in firebase
                                 Utility.setRootScreen(isShowAnimation: true)
                             }
                         }
-                        
                     case .failure(let error):
                         // 🚨 Display an error message to the user.
                         AlertMesage.show(.error, message: error.localizedDescription)

@@ -3,4 +3,148 @@
    uuid = "A217E23F-5B34-4EB7-95E9-8326FD769A6D"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4669CFF7-7ADB-4D83-9E42-8A5F778E1383"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "getUserData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4669CFF7-7ADB-4D83-9E42-8A5F778E1383 - dd6e15a15fcf816d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CbkTask.FirebaseDatabaseManager.getUserData() -&gt; ()"
+                  moduleName = "CbkTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hetu/Documents/GitHub/cbk-task/CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "101">
+               </Location>
+               <Location
+                  uuid = "4669CFF7-7ADB-4D83-9E42-8A5F778E1383 - dd6e15a15fcf816d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CbkTask.FirebaseDatabaseManager.getUserData() -&gt; ()"
+                  moduleName = "CbkTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hetu/Documents/GitHub/cbk-task/CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "330">
+               </Location>
+               <Location
+                  uuid = "4669CFF7-7ADB-4D83-9E42-8A5F778E1383 - dd6e15a15fcf8123"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CbkTask.FirebaseDatabaseManager.getUserData() -&gt; ()"
+                  moduleName = "CbkTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hetu/Documents/GitHub/cbk-task/CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "101">
+               </Location>
+               <Location
+                  uuid = "4669CFF7-7ADB-4D83-9E42-8A5F778E1383 - dd6e15a15fcf8123"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CbkTask.FirebaseDatabaseManager.getUserData() -&gt; ()"
+                  moduleName = "CbkTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hetu/Documents/GitHub/cbk-task/CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "330">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC9E7A9A-A7F1-4275-AE18-F69345DD9ED2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "updateUserModel(photoUrl:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DC9E7A9A-A7F1-4275-AE18-F69345DD9ED2 - 76ebe423b0e523eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CbkTask.FirebaseDatabaseManager.updateUserModel(photoUrl: Swift.String) -&gt; ()"
+                  moduleName = "CbkTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hetu/Documents/GitHub/cbk-task/CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "1725">
+               </Location>
+               <Location
+                  uuid = "DC9E7A9A-A7F1-4275-AE18-F69345DD9ED2 - 76ebe423b0e523a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CbkTask.FirebaseDatabaseManager.updateUserModel(photoUrl: Swift.String) -&gt; ()"
+                  moduleName = "CbkTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hetu/Documents/GitHub/cbk-task/CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "1725">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1FA21C76-DCE7-4F26-9BD8-CAD2587D850B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "updateUserModel(photoUrl:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

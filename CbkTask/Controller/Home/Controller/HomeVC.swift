@@ -12,7 +12,7 @@ class HomeVC: BaseViewController, StoryboardSceneBased {
 
     /// Storyboard variable
     static let sceneStoryboard = UIStoryboard(name: StoryboardName.home.rawValue, bundle: nil)
-
+    
     // MARK: Variable
     private lazy var homeVM: HomeVM = {
         return HomeVM()
@@ -20,9 +20,9 @@ class HomeVC: BaseViewController, StoryboardSceneBased {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        FirebaseDatabaseManager.shared.getUserData()
     }
-    
+  
     // MARK: IBActiond
     // action method on Add Photos button click
     /// - Parameter sender: object of button

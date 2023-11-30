@@ -16,7 +16,11 @@ class HomeVM {
     ///   - img: UIimage
     ///   - completion: completion hadle
     func uploadImage(img: UIImage, completion: @escaping ((Bool) -> Void)) {
-        FirebaseDeepLinkManager.shared.uploadImagetoServer(img: img) { sucess in
+        FirebaseDatabaseManager.shared.uploadImagetoServer(img: img) { sucess , url in
+            if let finlaUrl = url {
+                FirebaseDatabaseManager.shared.updateUserModel(photoUrl: finlaUrl)
+            }
+            
             completion(true)
         }
     }

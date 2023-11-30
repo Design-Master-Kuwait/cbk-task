@@ -12,3 +12,14 @@ public enum RegistationType: String {
     case normal
     case google
 }
+
+/// Firebase Firestore Keys
+struct FirbaseKeys {
+    static let users                                 = "Users"
+    static let name                                 = "name"
+    static let email                                 = "email"
+    static let profile                                = "image"
+    static let id                                = "id"
+    static let photos                                = "photos"
+    
+}
