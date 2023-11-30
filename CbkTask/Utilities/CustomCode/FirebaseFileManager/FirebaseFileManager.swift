@@ -10,6 +10,7 @@ import FirebaseCore
 import FirebaseFirestore
 import FirebaseAuth
 import FirebaseStorage
+import FirebaseDatabase
 
 /// Perform all firebase file uplded task
 class FirebaseDatabaseManager {
@@ -78,6 +79,29 @@ class FirebaseDatabaseManager {
             refrance.setData(param)
         }
     }
+    
+    /// Insert Data into Firestore Databse
+    func insertFeed(photoUrl: String) {
+        if let curruntUser = UserManager.shared.current {
+            var param: [String: Any] = [:]
+            
+            var userDic: [String: Any] = [:]
+            userDic[FirbaseKeys.name]  = curruntUser.name ?? ""
+            userDic[FirbaseKeys.email]  = curruntUser.email ?? ""
+            userDic[FirbaseKeys.profile]  = curruntUser.image ?? ""
+            userDic[FirbaseKeys.id]  = curruntUser.id ?? ""
+            
+            param[FirbaseKeys.user]  = userDic
+            param[FirbaseKeys.photos]  = photoUrl
+            
+            
+            
+            
+            let refrance = database.document("\(FirbaseKeys.feed)/\(curruntUser.id ?? "")")
+            refrance.setData(param)
+        }
+    }
+    
     
     /// Fetch  all user details from fire store
     /// - Parameter completion: completion handler

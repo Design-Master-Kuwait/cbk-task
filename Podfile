@@ -19,6 +19,7 @@ target 'CbkTask' do
   #  # For example, to use Firebase Authentication and Cloud Firestore
   pod 'FirebaseFirestore', '9.6.0'
   pod 'Firebase/Storage','9.6.0'
+  pod 'Firebase/Database','9.6.0'
 
 
   target 'CbkTaskTests' do

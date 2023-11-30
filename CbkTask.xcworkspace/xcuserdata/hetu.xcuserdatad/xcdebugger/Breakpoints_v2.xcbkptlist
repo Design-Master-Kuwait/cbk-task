@@ -23,15 +23,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5FE388E4-4D45-4955-8925-F0C925566BE0"
+            uuid = "FD1EE6C2-81E1-4538-BF3B-D334ECCAA1DF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "getUserData(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -39,97 +39,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CD8506CB-820A-4DEA-A07E-A3D6BA91FADC"
+            uuid = "54AEFB67-B0F7-4700-B68D-B4B8327D4E58"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "getUserData(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CD8506CB-820A-4DEA-A07E-A3D6BA91FADC - c894332bad626b02"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CbkTask.FirebaseDatabaseManager.getUserData(completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "CbkTask"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hetu/Documents/GitHub/cbk-task/CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87"
-                  offsetFromSymbolStart = "1058">
-               </Location>
-               <Location
-                  uuid = "CD8506CB-820A-4DEA-A07E-A3D6BA91FADC - 73f994491f66bd94"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CbkTask.FirebaseDatabaseManager.getUserData(completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "CbkTask"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hetu/Documents/GitHub/cbk-task/CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
-                  offsetFromSymbolStart = "184">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "437CEEBD-56A3-4DA6-B38B-13B539892E0A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "getUserData(completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "437CEEBD-56A3-4DA6-B38B-13B539892E0A - c894332bad6268c0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CbkTask.FirebaseDatabaseManager.getUserData(completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "CbkTask"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hetu/Documents/GitHub/cbk-task/CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "143">
-               </Location>
-               <Location
-                  uuid = "437CEEBD-56A3-4DA6-B38B-13B539892E0A - c894332bad6268c0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CbkTask.FirebaseDatabaseManager.getUserData(completion: () -&gt; ()) -&gt; ()"
-                  moduleName = "CbkTask"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hetu/Documents/GitHub/cbk-task/CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "209">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -50,7 +50,6 @@
 		9CC1DA482B1658B200B1B2CA /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1DA442B1658B200B1B2CA /* String+Localization.swift */; };
 		9CC1DA4D2B16599C00B1B2CA /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1DA4C2B16599C00B1B2CA /* AppKey.swift */; };
 		C19DC4712B16697B00FCBE6F /* AppDelegate + GoogleSignin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19DC4702B16697B00FCBE6F /* AppDelegate + GoogleSignin.swift */; };
-		C19DC4752B17127500FCBE6F /* AlertMesage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19DC4742B17127500FCBE6F /* AlertMesage.swift */; };
 		C1DBAD272B17326F0045F18F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD262B17326F0045F18F /* ImagePicker.swift */; };
 		C1DBAD2C2B1744DC0045F18F /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD2B2B1744DC0045F18F /* HomeVM.swift */; };
 		C1DBAD2F2B1745470045F18F /* FirebaseFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD2E2B1745470045F18F /* FirebaseFileManager.swift */; };
@@ -69,6 +68,7 @@
 		C1DBAD542B1875C00045F18F /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD4E2B1875C00045F18F /* NibOwnerLoadable.swift */; };
 		C1DBAD572B1877DC0045F18F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C1DBAD562B1877DC0045F18F /* Kingfisher */; };
 		C1DBAD592B1878290045F18F /* UIImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD582B1878290045F18F /* UIImageView+Kingfisher.swift */; };
+		C1DBAD5F2B18B3C50045F18F /* AlertMesage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD5D2B18B3C50045F18F /* AlertMesage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,7 +137,6 @@
 		9CC1DA4C2B16599C00B1B2CA /* AppKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppKey.swift; sourceTree = "<group>"; };
 		A75DD6BF4904B7279196797A /* Pods-CbkTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CbkTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-CbkTaskTests/Pods-CbkTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C19DC4702B16697B00FCBE6F /* AppDelegate + GoogleSignin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate + GoogleSignin.swift"; sourceTree = "<group>"; };
-		C19DC4742B17127500FCBE6F /* AlertMesage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMesage.swift; sourceTree = "<group>"; };
 		C1DBAD262B17326F0045F18F /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C1DBAD2B2B1744DC0045F18F /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		C1DBAD2E2B1745470045F18F /* FirebaseFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFileManager.swift; sourceTree = "<group>"; };
@@ -155,6 +154,7 @@
 		C1DBAD4D2B1875C00045F18F /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		C1DBAD4E2B1875C00045F18F /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
 		C1DBAD582B1878290045F18F /* UIImageView+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		C1DBAD5D2B18B3C50045F18F /* AlertMesage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMesage.swift; sourceTree = "<group>"; };
 		CC7EC16693F75F64C2A2B431 /* Pods_CbkTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CbkTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -202,15 +202,6 @@
 				050906FD7FD80B3A192DE74B /* Pods-CbkTaskTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		9CA3BE032B17070100218293 /* AlertMesage */ = {
-			isa = PBXGroup;
-			children = (
-				C19DC4742B17127500FCBE6F /* AlertMesage.swift */,
-			);
-			name = AlertMesage;
-			path = "../../../../Trendal-ios/Trendal/Utilities/CustomCode/AlertMesage";
 			sourceTree = "<group>";
 		};
 		9CA3BE152B170D5C00218293 /* Color */ = {
@@ -443,12 +434,12 @@
 		9CC1DA102B16248800B1B2CA /* CustomCode */ = {
 			isa = PBXGroup;
 			children = (
+				C1DBAD5C2B18B3C50045F18F /* AlertMesage */,
 				C1DBAD482B1875C00045F18F /* Reusable */,
 				C1DBAD302B17475C0045F18F /* ProgressHUD */,
 				C1DBAD2D2B17452A0045F18F /* FirebaseFileManager */,
 				C1DBAD252B17325E0045F18F /* ImagePicker */,
 				9CA3BE152B170D5C00218293 /* Color */,
-				9CA3BE032B17070100218293 /* AlertMesage */,
 				9CC1DA342B1632FD00B1B2CA /* Secure */,
 				9CC1DA2E2B1631BE00B1B2CA /* Logger */,
 				9CC1DA122B16249700B1B2CA /* CustomClasses */,
@@ -645,6 +636,14 @@
 				C1DBAD4E2B1875C00045F18F /* NibOwnerLoadable.swift */,
 			);
 			path = Reusable;
+			sourceTree = "<group>";
+		};
+		C1DBAD5C2B18B3C50045F18F /* AlertMesage */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBAD5D2B18B3C50045F18F /* AlertMesage.swift */,
+			);
+			path = AlertMesage;
 			sourceTree = "<group>";
 		};
 		D0E0CD544B3CDB7BE3033B40 /* Frameworks */ = {
@@ -954,7 +953,6 @@
 			files = (
 				9CA3BE322B17233700218293 /* Utility.swift in Sources */,
 				C1DBAD322B17475C0045F18F /* ProgressHUD.swift in Sources */,
-				C19DC4752B17127500FCBE6F /* AlertMesage.swift in Sources */,
 				9CA3BE122B170B8E00218293 /* Localizable.swift in Sources */,
 				C1DBAD502B1875C00045F18F /* Bundle+extention.swift in Sources */,
 				9CC1DA1D2B16251800B1B2CA /* GoogleLogin+Manager.swift in Sources */,
@@ -971,6 +969,7 @@
 				9CA3BE272B171D0B00218293 /* HomeVC.swift in Sources */,
 				9CC1DA462B1658B200B1B2CA /* StringExtension.swift in Sources */,
 				9CC1DA4D2B16599C00B1B2CA /* AppKey.swift in Sources */,
+				C1DBAD5F2B18B3C50045F18F /* AlertMesage.swift in Sources */,
 				9CC1DA472B1658B200B1B2CA /* String+Validation.swift in Sources */,
 				C1DBAD522B1875C00045F18F /* UITableView+Reusable.swift in Sources */,
 				9CC1DA332B16321500B1B2CA /* Enum.swift in Sources */,
