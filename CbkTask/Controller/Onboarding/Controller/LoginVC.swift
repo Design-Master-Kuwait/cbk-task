@@ -22,6 +22,11 @@ class LoginVC: BaseViewController , StoryboardSceneBased {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     // MARK: IBActiond
     // action method on google login button click
     /// - Parameter sender: object of button

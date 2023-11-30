@@ -21,6 +21,7 @@ class HomeVC: BaseViewController, StoryboardSceneBased {
     override func viewDidLoad() {
         super.viewDidLoad()
         FirebaseDatabaseManager.shared.getUserData()
+
     }
   
     // MARK: IBActiond
@@ -35,6 +36,11 @@ class HomeVC: BaseViewController, StoryboardSceneBased {
             }
         }) { _ in
         }
+
+    }
+    @IBAction func logoutTapped(_ sender: Any) {
+        UserManager.shared.removeUser()
+        Utility.setRootScreen(isShowAnimation: true)
 
     }
     

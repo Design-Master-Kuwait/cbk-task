@@ -7,11 +7,13 @@
 
 import UIKit
 
-// Base viewcontroller class , will use for alll viewcontroller as base controller
+// Base viewcontroller class , will use for all ciew controler as base controller
 class BaseViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+    }
+    
 }
