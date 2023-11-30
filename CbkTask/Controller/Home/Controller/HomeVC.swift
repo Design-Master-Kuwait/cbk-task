@@ -20,8 +20,7 @@ class HomeVC: BaseViewController, StoryboardSceneBased {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
+        configureOnViewDidLoad()
     }
     // MARK: - Private Methods
     private func configureOnViewDidLoad() {

@@ -92,6 +92,8 @@ class FirebaseDatabaseManager {
                         }
                         UserManager.shared.sync(user: userModel)
                         completion()
+                } else {
+                    completion()
                 }
             }
         }
