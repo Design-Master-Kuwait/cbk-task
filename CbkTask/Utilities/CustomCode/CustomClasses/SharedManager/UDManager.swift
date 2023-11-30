@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+/// Ud Manager help to handle and store all local prefrance data
 class UDManager {
 
     /// This will store the DeviceToken for the Push notification
@@ -45,6 +46,29 @@ class UDManager {
                 USER_DEFAULTS.setValue(strEncoded, forKey: #function)
                 USER_DEFAULTS.synchronize()
             }
+        }
+    }
+    /// Store user uploded photo in fire store it synch with User Manager and fire store which hold user all uploded photos
+    class var userPhotos: [String]? {
+        get {
+
+            let decoded = UserDefaults.standard[#function] ?? Data()
+            // 'unarchiveObject(with:)' was deprecated in iOS 12.0: Use +unarchivedObjectOfClass:fromData:error: instead
+            // let dt = try? NSKeyedUnarchiver.unarchivedObject(ofClasses: [Plans.self], from: decoded) as? [Plans]
+            // let dt = (try? NSKeyedUnarchiver.unarchivedObject(ofClasses: [Plans.self], from: decoded)) as? [Plans]
+            let dt = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decoded) as? [String]
+            return dt
+        }
+        set {
+
+            if newValue == nil {
+                UserDefaults.standard.removeObject(forKey: #function)
+            } else {
+                let encodedData: Data = try! NSKeyedArchiver.archivedData(withRootObject: newValue!, requiringSecureCoding: false)
+                // UserDefaults.standard.setValue(encodedData, forKey: #function)
+                UserDefaults.standard[#function] = encodedData
+            }
+
         }
     }
     

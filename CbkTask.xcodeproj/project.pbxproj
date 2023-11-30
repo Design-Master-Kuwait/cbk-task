@@ -55,6 +55,20 @@
 		C1DBAD2C2B1744DC0045F18F /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD2B2B1744DC0045F18F /* HomeVM.swift */; };
 		C1DBAD2F2B1745470045F18F /* FirebaseFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD2E2B1745470045F18F /* FirebaseFileManager.swift */; };
 		C1DBAD322B17475C0045F18F /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD312B17475C0045F18F /* ProgressHUD.swift */; };
+		C1DBAD352B1870100045F18F /* UIAlertControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD342B1870100045F18F /* UIAlertControllerExtensions.swift */; };
+		C1DBAD3C2B18718F0045F18F /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD3B2B18718F0045F18F /* ProfileVC.swift */; };
+		C1DBAD3E2B18724D0045F18F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DBAD3D2B18724D0045F18F /* Profile.storyboard */; };
+		C1DBAD412B1872B30045F18F /* UIViewControllerExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD402B1872B30045F18F /* UIViewControllerExtenstion.swift */; };
+		C1DBAD432B1874B40045F18F /* ProfileVC+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD422B1874B40045F18F /* ProfileVC+UI.swift */; };
+		C1DBAD462B1875180045F18F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD442B1875180045F18F /* PhotoCell.swift */; };
+		C1DBAD472B1875180045F18F /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1DBAD452B1875180045F18F /* PhotoCell.xib */; };
+		C1DBAD502B1875C00045F18F /* Bundle+extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD4A2B1875C00045F18F /* Bundle+extention.swift */; };
+		C1DBAD512B1875C00045F18F /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD4B2B1875C00045F18F /* Reusable.swift */; };
+		C1DBAD522B1875C00045F18F /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD4C2B1875C00045F18F /* UITableView+Reusable.swift */; };
+		C1DBAD532B1875C00045F18F /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD4D2B1875C00045F18F /* NibLoadable.swift */; };
+		C1DBAD542B1875C00045F18F /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD4E2B1875C00045F18F /* NibOwnerLoadable.swift */; };
+		C1DBAD572B1877DC0045F18F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C1DBAD562B1877DC0045F18F /* Kingfisher */; };
+		C1DBAD592B1878290045F18F /* UIImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBAD582B1878290045F18F /* UIImageView+Kingfisher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +142,19 @@
 		C1DBAD2B2B1744DC0045F18F /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		C1DBAD2E2B1745470045F18F /* FirebaseFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFileManager.swift; sourceTree = "<group>"; };
 		C1DBAD312B17475C0045F18F /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		C1DBAD342B1870100045F18F /* UIAlertControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtensions.swift; sourceTree = "<group>"; };
+		C1DBAD3B2B18718F0045F18F /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		C1DBAD3D2B18724D0045F18F /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		C1DBAD402B1872B30045F18F /* UIViewControllerExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtenstion.swift; sourceTree = "<group>"; };
+		C1DBAD422B1874B40045F18F /* ProfileVC+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC+UI.swift"; sourceTree = "<group>"; };
+		C1DBAD442B1875180045F18F /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		C1DBAD452B1875180045F18F /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		C1DBAD4A2B1875C00045F18F /* Bundle+extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+extention.swift"; sourceTree = "<group>"; };
+		C1DBAD4B2B1875C00045F18F /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		C1DBAD4C2B1875C00045F18F /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		C1DBAD4D2B1875C00045F18F /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		C1DBAD4E2B1875C00045F18F /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
+		C1DBAD582B1878290045F18F /* UIImageView+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Kingfisher.swift"; sourceTree = "<group>"; };
 		CC7EC16693F75F64C2A2B431 /* Pods_CbkTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CbkTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -136,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DBAD572B1877DC0045F18F /* Kingfisher in Frameworks */,
 				9CC1DA0A2B1617CB00B1B2CA /* KeychainAccess in Frameworks */,
 				9CC1DA0D2B16181400B1B2CA /* Reachability in Frameworks */,
 				9CC1DA3B2B16349900B1B2CA /* SwiftyJSON in Frameworks */,
@@ -297,6 +325,7 @@
 		9CC1D9F32B16103C00B1B2CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C1DBAD362B18715B0045F18F /* Profile */,
 				9CA3BE1F2B171CC600218293 /* Home */,
 				9CC1DA002B16126A00B1B2CA /* BaseController */,
 				9CC1D9F92B16121400B1B2CA /* Onboarding */,
@@ -414,6 +443,7 @@
 		9CC1DA102B16248800B1B2CA /* CustomCode */ = {
 			isa = PBXGroup;
 			children = (
+				C1DBAD482B1875C00045F18F /* Reusable */,
 				C1DBAD302B17475C0045F18F /* ProgressHUD */,
 				C1DBAD2D2B17452A0045F18F /* FirebaseFileManager */,
 				C1DBAD252B17325E0045F18F /* ImagePicker */,
@@ -485,6 +515,8 @@
 		9CC1DA3E2B1658A300B1B2CA /* Extention */ = {
 			isa = PBXGroup;
 			children = (
+				C1DBAD3F2B1872A60045F18F /* Uikit */,
+				C1DBAD332B1870100045F18F /* UIAlertController */,
 				9CA3BE292B171D8C00218293 /* Storyboard */,
 				9CC1DA3F2B1658B200B1B2CA /* SwiftStdlib */,
 			);
@@ -542,6 +574,79 @@
 			path = ProgressHUD;
 			sourceTree = "<group>";
 		};
+		C1DBAD332B1870100045F18F /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBAD342B1870100045F18F /* UIAlertControllerExtensions.swift */,
+			);
+			path = UIAlertController;
+			sourceTree = "<group>";
+		};
+		C1DBAD362B18715B0045F18F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBAD3A2B18717E0045F18F /* Controller */,
+				C1DBAD392B18716F0045F18F /* View */,
+				C1DBAD382B18716A0045F18F /* Model */,
+				C1DBAD372B1871620045F18F /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C1DBAD372B1871620045F18F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1DBAD382B18716A0045F18F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1DBAD392B18716F0045F18F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBAD3D2B18724D0045F18F /* Profile.storyboard */,
+				C1DBAD442B1875180045F18F /* PhotoCell.swift */,
+				C1DBAD452B1875180045F18F /* PhotoCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1DBAD3A2B18717E0045F18F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBAD3B2B18718F0045F18F /* ProfileVC.swift */,
+				C1DBAD422B1874B40045F18F /* ProfileVC+UI.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1DBAD3F2B1872A60045F18F /* Uikit */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBAD402B1872B30045F18F /* UIViewControllerExtenstion.swift */,
+				C1DBAD582B1878290045F18F /* UIImageView+Kingfisher.swift */,
+			);
+			path = Uikit;
+			sourceTree = "<group>";
+		};
+		C1DBAD482B1875C00045F18F /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBAD4A2B1875C00045F18F /* Bundle+extention.swift */,
+				C1DBAD4B2B1875C00045F18F /* Reusable.swift */,
+				C1DBAD4C2B1875C00045F18F /* UITableView+Reusable.swift */,
+				C1DBAD4D2B1875C00045F18F /* NibLoadable.swift */,
+				C1DBAD4E2B1875C00045F18F /* NibOwnerLoadable.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
 		D0E0CD544B3CDB7BE3033B40 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +681,7 @@
 				9CC1DA0C2B16181400B1B2CA /* Reachability */,
 				9CC1DA3A2B16349900B1B2CA /* SwiftyJSON */,
 				9CA3BE0D2B17095300218293 /* SwiftMessages */,
+				C1DBAD562B1877DC0045F18F /* Kingfisher */,
 			);
 			productName = CbkTask;
 			productReference = 9CC1D9C02B160FA700B1B2CA /* CbkTask.app */;
@@ -658,6 +764,7 @@
 				9CC1DA0B2B16181400B1B2CA /* XCRemoteSwiftPackageReference "Reachability" */,
 				9CC1DA392B16349900B1B2CA /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				9CA3BE0C2B17095300218293 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+				C1DBAD552B1877DC0045F18F /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 9CC1D9C12B160FA700B1B2CA /* Products */;
 			projectDirPath = "";
@@ -677,9 +784,11 @@
 			files = (
 				9CA3BE252B171CFE00218293 /* Home.storyboard in Resources */,
 				9CA3BE142B170CF500218293 /* ColorAsset.xcassets in Resources */,
+				C1DBAD3E2B18724D0045F18F /* Profile.storyboard in Resources */,
 				9CC1D9D02B160FA900B1B2CA /* LaunchScreen.storyboard in Resources */,
 				9CC1DA0F2B1623B800B1B2CA /* GoogleService-Info.plist in Resources */,
 				9CC1D9CD2B160FA900B1B2CA /* Assets.xcassets in Resources */,
+				C1DBAD472B1875180045F18F /* PhotoCell.xib in Resources */,
 				9CC1DA452B1658B200B1B2CA /* README_StringHelper.md.rtf in Resources */,
 				9CC1D9FF2B16125C00B1B2CA /* Onboarding.storyboard in Resources */,
 			);
@@ -847,26 +956,37 @@
 				C1DBAD322B17475C0045F18F /* ProgressHUD.swift in Sources */,
 				C19DC4752B17127500FCBE6F /* AlertMesage.swift in Sources */,
 				9CA3BE122B170B8E00218293 /* Localizable.swift in Sources */,
+				C1DBAD502B1875C00045F18F /* Bundle+extention.swift in Sources */,
 				9CC1DA1D2B16251800B1B2CA /* GoogleLogin+Manager.swift in Sources */,
+				C1DBAD592B1878290045F18F /* UIImageView+Kingfisher.swift in Sources */,
+				C1DBAD512B1875C00045F18F /* Reusable.swift in Sources */,
 				9CC1DA022B16129000B1B2CA /* BaseViewController.swift in Sources */,
+				C1DBAD412B1872B30045F18F /* UIViewControllerExtenstion.swift in Sources */,
 				9CC1DA3D2B16585500B1B2CA /* Constant.swift in Sources */,
 				9CC1DA1C2B16251800B1B2CA /* UserManager.swift in Sources */,
 				9CC1DA062B1612F800B1B2CA /* LoginVC.swift in Sources */,
+				C1DBAD3C2B18718F0045F18F /* ProfileVC.swift in Sources */,
 				9CC1D9C42B160FA700B1B2CA /* AppDelegate.swift in Sources */,
 				9CC1DA042B1612B600B1B2CA /* BaseNavigationController.swift in Sources */,
 				9CA3BE272B171D0B00218293 /* HomeVC.swift in Sources */,
 				9CC1DA462B1658B200B1B2CA /* StringExtension.swift in Sources */,
 				9CC1DA4D2B16599C00B1B2CA /* AppKey.swift in Sources */,
 				9CC1DA472B1658B200B1B2CA /* String+Validation.swift in Sources */,
+				C1DBAD522B1875C00045F18F /* UITableView+Reusable.swift in Sources */,
 				9CC1DA332B16321500B1B2CA /* Enum.swift in Sources */,
+				C1DBAD532B1875C00045F18F /* NibLoadable.swift in Sources */,
 				9CC1DA382B16339900B1B2CA /* User.swift in Sources */,
 				9CC1DA302B1631BE00B1B2CA /* Logger.swift in Sources */,
+				C1DBAD542B1875C00045F18F /* NibOwnerLoadable.swift in Sources */,
+				C1DBAD432B1874B40045F18F /* ProfileVC+UI.swift in Sources */,
+				C1DBAD352B1870100045F18F /* UIAlertControllerExtensions.swift in Sources */,
 				C1DBAD272B17326F0045F18F /* ImagePicker.swift in Sources */,
 				9CA3BE172B170D5C00218293 /* UIColorExtensions.swift in Sources */,
 				9CA3BE2F2B17201500218293 /* AuthVM.swift in Sources */,
 				C1DBAD2F2B1745470045F18F /* FirebaseFileManager.swift in Sources */,
 				9CC1DA212B16251800B1B2CA /* Connectivity.swift in Sources */,
 				9CC1DA1F2B16251800B1B2CA /* UDManager.swift in Sources */,
+				C1DBAD462B1875180045F18F /* PhotoCell.swift in Sources */,
 				9CA3BE2B2B171D8C00218293 /* StoryboardSceneBased.swift in Sources */,
 				9CC1DA1E2B16251800B1B2CA /* SocialUser.swift in Sources */,
 				9CC1DA362B1632FD00B1B2CA /* Obfuscator.swift in Sources */,
@@ -1264,6 +1384,14 @@
 				version = 5.0.1;
 			};
 		};
+		C1DBAD552B1877DC0045F18F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.6.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1286,6 +1414,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9CC1DA392B16349900B1B2CA /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		C1DBAD562B1877DC0045F18F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1DBAD552B1877DC0045F18F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

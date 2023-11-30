@@ -11,4 +11,5 @@ import UIKit
 enum StoryboardName: String {
     case home = "Home"
     case onboarding = "Onboarding"
+    case profile = "Profile"
 }

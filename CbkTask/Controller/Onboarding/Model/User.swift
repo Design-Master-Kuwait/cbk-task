@@ -20,7 +20,7 @@ public final class User: NSObject, NSCoding, NSSecureCoding {
         static let id = "id"
         static let email = "email"
         static let name = "name"
-        static let photos = "photos"
+        
     }
 
     // MARK: Properties
@@ -29,7 +29,7 @@ public final class User: NSObject, NSCoding, NSSecureCoding {
     public var image: String?
     public var name: String?
     public var email: String?
-    public var photos: [String]?
+    
     
     // MARK: SwiftyJSON Initializers
     /// Initiates the instance based on the object.
@@ -48,7 +48,7 @@ public final class User: NSObject, NSCoding, NSSecureCoding {
         image = json[SerializationKeys.image].string
         name = json[SerializationKeys.name].string
         email = json[SerializationKeys.email].string
-        if let items = json[SerializationKeys.photos].array { photos = items.map { $0.stringValue } }
+        
 
     }
     /// Generates description of the object in the form of a NSDictionary.
@@ -56,25 +56,22 @@ public final class User: NSObject, NSCoding, NSSecureCoding {
     /// - returns: A Key value pair containing all valid values in the object.
     public func dictionaryRepresentation() -> [String: Any] {
         var dictionary: [String: Any] = [:]
-        if let value = photos { dictionary[SerializationKeys.photos] = value }
+        
         if let value = name { dictionary[SerializationKeys.name] = value }
         if let value = email { dictionary[SerializationKeys.email] = value }
         if let value = id { dictionary[SerializationKeys.id] = value }
         if let value = image { dictionary[SerializationKeys.image] = value }
-        
-        
         return dictionary
     }
 
     // MARK: NSCoding Protocol
     required public init(coder aDecoder: NSCoder) {
-        self.photos = aDecoder.decodeObject(forKey: SerializationKeys.photos) as? [String]
+        
         self.name = aDecoder.decodeObject(forKey: SerializationKeys.name) as? String
         self.id = aDecoder.decodeObject(forKey: SerializationKeys.id) as? String
         self.image = aDecoder.decodeObject(forKey: SerializationKeys.image) as? String
     }
     public func encode(with aCoder: NSCoder) {
-        aCoder.encode(photos, forKey: SerializationKeys.photos)
         aCoder.encode(name, forKey: SerializationKeys.name)
         aCoder.encode(id, forKey: SerializationKeys.id)
         aCoder.encode(image, forKey: SerializationKeys.image)

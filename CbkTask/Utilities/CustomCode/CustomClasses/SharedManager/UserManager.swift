@@ -2,6 +2,7 @@
 import Foundation
 import UIKit
 
+/// User manage used to handle all login user dara store and synch with keychain 
 class UserManager {
 
     // MARK: Declaration for string constants to be used to decode and also serialize.
@@ -171,6 +172,8 @@ class UserManager {
         
         removeUserFromKeychain()
 
+        UDManager.userPhotos?.removeAll()
+        
         current = nil
         authToken = nil
 

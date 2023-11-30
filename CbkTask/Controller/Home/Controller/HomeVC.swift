@@ -20,11 +20,24 @@ class HomeVC: BaseViewController, StoryboardSceneBased {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        FirebaseDatabaseManager.shared.getUserData()
+        
 
     }
-  
+    // MARK: - Private Methods
+    private func configureOnViewDidLoad() {
+        FirebaseDatabaseManager.shared.getUserData { // for fetching latest user data from fire store
+        }
+    }
+    // MARK: Private Methods
+    
     // MARK: IBActiond
+    // action method on Profile button click
+    /// - Parameter sender: object of button
+    @IBAction func btnProfileTappped(_ sender: Any) {
+        let controller = ProfileVC.instantiate()
+        self.pushVC(controller: controller)
+    }
+    
     // action method on Add Photos button click
     /// - Parameter sender: object of button
     @IBAction func btnAddTapped(_ sender: Any) {
@@ -38,10 +51,10 @@ class HomeVC: BaseViewController, StoryboardSceneBased {
         }
 
     }
+    // action method on logout button click
+    /// - Parameter sender: object of button
     @IBAction func logoutTapped(_ sender: Any) {
-        UserManager.shared.removeUser()
-        Utility.setRootScreen(isShowAnimation: true)
-
+        showLogoutAlert()
     }
     
     /// Image Uploaded API

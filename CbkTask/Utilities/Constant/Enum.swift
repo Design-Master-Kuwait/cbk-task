@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 /// Register login type normal and social for identify
 public enum RegistationType: String {
     case normal
@@ -21,5 +21,11 @@ struct FirbaseKeys {
     static let profile                                = "image"
     static let id                                = "id"
     static let photos                                = "photos"
-    
+    static let images                                = "images"
+}
+
+/// Image constant used for show static icons
+struct ImageConstant {
+    static let placeholder                                 = UIImage(named: "ic_placeholder")
+ 
 }

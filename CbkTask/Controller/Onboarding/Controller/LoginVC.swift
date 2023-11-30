@@ -7,12 +7,12 @@
 
 import UIKit
 
-class LoginVC: BaseViewController , StoryboardSceneBased {
+/// Login Vc contain all logic and Ui  for login funcation which is perfom in google sign in
+class LoginVC: BaseViewController, StoryboardSceneBased {
     
     /// Storyboard variable
     static let sceneStoryboard = UIStoryboard(name: StoryboardName.onboarding.rawValue, bundle: nil)
 
-    
     // MARK: Variable
     private lazy var authVM: AuthVM = {
         return AuthVM()
@@ -46,10 +46,7 @@ class LoginVC: BaseViewController , StoryboardSceneBased {
                         GoogleManager.shared.logout()
                         if response.authCode?.isBlank == false {
                             authVM.saveUserData(user: response)
-                            authVM.handleSuccess {
-                                FirebaseDatabaseManager.shared.insertUserData() // for storing user data in firebase
-                                Utility.setRootScreen(isShowAnimation: true)
-                            }
+                            checkFireStoreUserData()
                         }
                     case .failure(let error):
                         // 🚨 Display an error message to the user.
@@ -57,5 +54,16 @@ class LoginVC: BaseViewController , StoryboardSceneBased {
                         print(error)
                     }
                 }
+    }
+    
+    /// Fetch data from fire store if user already exist
+    func checkFireStoreUserData()  {
+        authVM.handleSuccess {
+            FirebaseDatabaseManager.shared.getUserData {
+                FirebaseDatabaseManager.shared.insertUserData() // for storing user data in firebase
+                Utility.setRootScreen(isShowAnimation: true)
+            }
+            
+        }
     }
 }

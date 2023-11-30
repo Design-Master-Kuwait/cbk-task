@@ -73,38 +73,45 @@ class FirebaseDatabaseManager {
             param[FirbaseKeys.email]  = curruntUser.email ?? ""
             param[FirbaseKeys.profile]  = curruntUser.image ?? ""
             param[FirbaseKeys.id]  = curruntUser.id ?? ""
-            param[FirbaseKeys.photos]  = [String]()
+            param[FirbaseKeys.photos]  = UDManager.userPhotos ?? [String]()
             let refrance = database.document("\(FirbaseKeys.users)/\(curruntUser.id ?? "")")
             refrance.setData(param)
         }
     }
     
-    /// Get User Data from fire store
-    func getUserData() {
+    /// Fetch  all user details from fire store
+    /// - Parameter completion: completion handler
+    func getUserData(completion: @escaping (() -> Void)) {
         if let curruntUser = UserManager.shared.current {
             let def = database.document("\(FirbaseKeys.users)/\(curruntUser.id ?? "")")
-            def.addSnapshotListener { snap, error  in
+            def.getDocument { snap, error  in
                 if let data = snap?.data() {
-                    let userModel = User(object: data)
-                    UserManager.shared.sync(user: userModel)
-                    
+                        let userModel = User(object: data)
+                        if let photos = data[FirbaseKeys.photos] as? [String] {
+                            UDManager.userPhotos = photos
+                        }
+                        UserManager.shared.sync(user: userModel)
+                        completion()
                 }
             }
         }
     }
+    
+    /// For Updating user data to firestore
+    /// - Parameter photoUrl: Phtoto Url in String
     func updateUserModel(photoUrl: String)  {
         if let curruntUser = UserManager.shared.current {
-            curruntUser.photos?.append(photoUrl)
-            UserManager.shared.sync(user: curruntUser)
+            UDManager.userPhotos?.append(photoUrl)
             var param: [String: Any] = [:]
-            param[FirbaseKeys.photos]  = curruntUser.photos ?? []
+            param[FirbaseKeys.photos]  = UDManager.userPhotos ?? []
             let refrance = database.document("\(FirbaseKeys.users)/\(curruntUser.id ?? "")")
             refrance.updateData(param)
         }
     }
-
+    
+    /// Foe getting all uploed image in  firebase storage
     func getAllPhotos()  {
-        let storageReference = storage.reference().child("images")
+        let storageReference = storage.reference().child(FirbaseKeys.images)
         storageReference.listAll { (result, error) in
             if let resultobj  = result {
                 for prefix in resultobj.items {

@@ -14,19 +14,19 @@ import Reachability
 
 #if DEBUG
 // APPSTORE version
-let keychain = Keychain(service: "com.cbktask.keychain.development")
+let keychain = Keychain(service: "test.cbktask.keychain.development")
 
 #elseif STAGING
 // CbkTest ENTERPRISE version
-let keychain = Keychain(service: "com.cbktask.keychain.stage")
+let keychain = Keychain(service: "test.cbktask.keychain.stage")
 
 #elseif RELEASE
 // CbkTest ENTERPRISE DEMO version
-let keychain = Keychain(service: "com.cbktask.keychain")
+let keychain = Keychain(service: "test.cbktask.keychain")
 
 #else
 // CbkTest DEVELOPMENT version
-let keychain = Keychain(service: "com.cbktask.keychain.development")
+let keychain = Keychain(service: "test.cbktask.keychain.development")
 
 #endif
 

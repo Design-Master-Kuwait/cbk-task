@@ -9,6 +9,8 @@
 import Foundation
 import GoogleSignIn
 import Firebase
+
+/// Goofle Manager help to hanle google login with GID sign in 
 class GoogleManager: NSObject {
     
     /// Shared object of the UserManager class

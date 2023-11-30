@@ -9,9 +9,8 @@ import Foundation
 import Foundation
 import UIKit
 
+/// Auth View Model contain all logic and method related to user flow
 class AuthVM {
-    
-    
     var objUser: User?
     
     /// save User Details
