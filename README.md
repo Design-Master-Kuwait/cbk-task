@@ -16,8 +16,8 @@
 - Implement basic user authentication using Firebase Authentication.
   
 2. **Photo Upload and Display:** Done
-- Allow users to upload photos from their devices.
-- Display a feed of uploaded photos with basic information.
+- Allow users to upload photos from their devices. Done
+- Display a feed of uploaded photos with basic information. working on that part 
 
  3. **Networking and API Integration:** Done
 - Integrate Firebase Storage for photo storage.
