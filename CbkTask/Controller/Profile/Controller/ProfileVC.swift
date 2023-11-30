@@ -8,7 +8,7 @@
 import UIKit
 
 /// Profile vc containe show basic information about login user like name email and photo and uploed feed photos
-class ProfileVC: BaseViewController , StoryboardSceneBased {
+class ProfileVC: BaseViewController, StoryboardSceneBased {
     
     /// Storyboard variable
     static let sceneStoryboard = UIStoryboard(name: StoryboardName.profile.rawValue, bundle: nil)

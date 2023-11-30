@@ -14,6 +14,9 @@ struct Localizable {
         static let loginSucess                   = "login sucess"
         static let imuploaded                   = "image uploaded successfully"
         static let logout                   = "Are you sure you want to logout?"
+        static let title                   = "Please enter title to continue!"
+        static let image                   = "Please add image"
+        static let postCreated                   = "Post created successfully"
     }
     
     struct AlertButton {

@@ -23,32 +23,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FD1EE6C2-81E1-4538-BF3B-D334ECCAA1DF"
+            uuid = "BE36D7C2-1146-4CF7-8595-4CC61D5D6573"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
+            filePath = "CbkTask/Controller/Home/View/PostCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "getUserData(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "54AEFB67-B0F7-4700-B68D-B4B8327D4E58"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CbkTask/Utilities/CustomCode/FirebaseFileManager/FirebaseFileManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "getUserData(completion:)"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "cellConfig(with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

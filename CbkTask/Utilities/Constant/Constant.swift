@@ -14,7 +14,9 @@ import Reachability
 
 #if DEBUG
 // APPSTORE version
-let keychain = Keychain(service: "test.cbktask.keychain.development")
+let keychain =
+
+Keychain(service: "test.cbktask.keychain.development")
 
 #elseif STAGING
 // CbkTest ENTERPRISE version
@@ -43,3 +45,6 @@ let MAIN_BUNDLE                                 =   Bundle.main
 /// get the first root viewcontroller
 var ROOT_FIRST_VC                               = UIApplication.shared.windows.first
 
+
+/// General object of UIApplication
+let APPLICATION                                 =   UIApplication.shared

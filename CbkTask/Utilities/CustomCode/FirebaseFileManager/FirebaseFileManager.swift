@@ -11,17 +11,21 @@ import FirebaseFirestore
 import FirebaseAuth
 import FirebaseStorage
 import FirebaseDatabase
+import SwiftyJSON
 
 /// Perform all firebase file uplded task
 class FirebaseDatabaseManager {
     
     // Get a reference to the storage service using the default Firebase App
-    let storage = Storage.storage()
+    private let storage = Storage.storage()
 
     // Get a database reference to the Firestore storage service using the default Firebase firstore
-    let database = Firestore.firestore()
+    private let database = Firestore.firestore()
 
     static let shared = FirebaseDatabaseManager()
+    
+    /// get a Firebase Database refrence to the firebase live database storage
+    private let firedatabase = Database.database().reference()
     
     /// Upload image into firebase storage
     /// - Parameters:
@@ -80,33 +84,77 @@ class FirebaseDatabaseManager {
         }
     }
     
+    /// Fetch all firebase store feeds value
+    /// - Parameter completion: completion handle it  will return Boo and Feed Data Model
+    func fetchAllFeeds(completion: @escaping (( Bool, FeedData?) -> Void)) {
+        firedatabase.child(FirbaseKeys.data).observeSingleEvent(of: .value) { snapshot, _  in
+            ProgressHUD.hide()
+            if let value  = snapshot.value as? [String : Any] {
+                let objFeed = FeedData(object: value)
+                completion(true, objFeed)
+            } else {
+                completion(false, nil)
+            }
+            
+        }
+    }
     /// Insert Data into Firestore Databse
-    func insertFeed(photoUrl: String) {
+    func insertFeed(photoUrl: String, title: String, completion: @escaping (() -> Void)) {
         if let curruntUser = UserManager.shared.current {
-            var param: [String: Any] = [:]
+            ProgressHUD.show()
+
+            var param = [String: Any]()
             
-            var userDic: [String: Any] = [:]
-            userDic[FirbaseKeys.name]  = curruntUser.name ?? ""
-            userDic[FirbaseKeys.email]  = curruntUser.email ?? ""
-            userDic[FirbaseKeys.profile]  = curruntUser.image ?? ""
-            userDic[FirbaseKeys.id]  = curruntUser.id ?? ""
+            var feedArray = [[String: Any]]()
             
-            param[FirbaseKeys.user]  = userDic
-            param[FirbaseKeys.photos]  = photoUrl
+            var feedDic = [String: Any]()
+            feedDic[FirbaseKeys.images]  = photoUrl
+            feedDic[FirbaseKeys.like]  = 0
+            feedDic[FirbaseKeys.title]  = title
+            feedDic[FirbaseKeys.postid]  = Utility.generateRandomNumber(inRange: 1...100)
+            feedDic[FirbaseKeys.postid]  = curruntUser.id ?? ""
             
+            var comentArray = [[String: Any]]()
+            var commentDic = [String: Any]()
+
+            commentDic[FirbaseKeys.comment]  = "comments not added"
+            comentArray.append(commentDic)
+            feedDic[FirbaseKeys.comments]  = comentArray
+            feedArray.append(feedDic)
             
+            param[FirbaseKeys.feed]  = feedArray
             
-            
-            let refrance = database.document("\(FirbaseKeys.feed)/\(curruntUser.id ?? "")")
-            refrance.setData(param)
+            // The path to your array in the database
+            let arrayPath = FirbaseKeys.dataFeed
+
+            //This code first retrieves the current array from the database, adds the new object to it, and then updates the array in the database.
+            // Get a reference to the array
+            let arrayRef = firedatabase.child(arrayPath) 
+
+            // Add the new object to the array
+            arrayRef.observeSingleEvent(of: .value) { snapshot in
+                
+                ProgressHUD.hide()
+                
+                if var array = snapshot.value as? [[String: Any]] {
+                    array.append(feedDic)
+                    arrayRef.setValue(array)
+                } else {
+                    // If the array doesn't exist yet, create it with the new object
+                    arrayRef.setValue([feedDic])
+                }
+                completion()
+            }
         }
     }
     
-    
     /// Fetch  all user details from fire store
     /// - Parameter completion: completion handler
-    func getUserData(completion: @escaping (() -> Void)) {
+    func getUserData(isShowLoader: Bool = false,completion: @escaping (() -> Void)) {
         if let curruntUser = UserManager.shared.current {
+            if isShowLoader {
+                ProgressHUD.show()
+            }
             let def = database.document("\(FirbaseKeys.users)/\(curruntUser.id ?? "")")
             def.getDocument { snap, error  in
                 if let data = snap?.data() {

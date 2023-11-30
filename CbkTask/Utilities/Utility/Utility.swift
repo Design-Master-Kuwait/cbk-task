@@ -34,9 +34,32 @@ public class Utility {
 
          
     }
+    /// This method will return a Top Most View Controller of the application's window which you wan use.
+    ///
+    /// - Returns: Object of the UIViewController
+    static func topMostController() -> UIViewController {
+        let arrWind = APPLICATION.windows
+        if arrWind.count > 0 {
+            if let keyWndw = APPLICATION.windows.filter({$0.isKeyWindow}).first {
+                var topController: UIViewController = keyWndw.rootViewController!
+                while topController.presentedViewController != nil {
+                    topController = topController.presentedViewController!
+                }
+                return topController
+            }
+        }
+        return UIViewController()
+    }
+    
     static var timestamp: String {
         return "\(Int(Date().timeIntervalSince1970 * 1000))"
     }
+    
+    /// function takes a closed range of integers and returns a random number within that range. The arc4random_uniform function is used to generate a random unsigned integer within the specified range, and then it's converted to an Int and adjusted to match the desired range.
+    static  func generateRandomNumber(inRange range: ClosedRange<Int>) -> Int {
+        return Int(arc4random_uniform(UInt32(range.upperBound - range.lowerBound + 1))) + range.lowerBound
+    }
+
     
     /// set navigation bar theame
     static func applyTheme() {
